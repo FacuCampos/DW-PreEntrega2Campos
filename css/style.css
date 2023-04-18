@@ -244,7 +244,7 @@ footer{
         font-size: 1.4rem;
     }
         .producto button:active{
-            background-color: rgb(55, 75, 85);
+            background-color: rgb(55, 95, 115);
         }
 
 .m-h1{
@@ -745,7 +745,7 @@ footer{
     }
 
     .producto button:hover{
-        background-color: rgb(55, 75, 85);
+        background-color: rgb(55, 95, 115);
     }
 
     .producto button:active{
@@ -823,6 +823,10 @@ footer{
         justify-self: end;
     }
 
+        .formulario button:hover{
+            background-color: rgb(55, 95, 115);
+        }
+
     .info-contacto-box{
         display: flex;
         justify-content: center;
@@ -841,9 +845,24 @@ footer{
 }
 
 @media (width >= 1200px){
+    .destacados{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
     /* Nosotros */
     .foto-local{
         width: 500px;
+    }
+
+    /* Tienda */
+    .tienda{
+        grid-template-areas:
+        'filtro prod1 prod2 prod3'
+        'filtro prod4 prod5 prod6'
+        'filtro prod7 prod8 prod9'
+        'filtro prod10 prod11 prod12'
+        'filtro ver-mas ver-mas ver-mas';
     }
 
     /* Como pagar */
@@ -861,28 +880,9 @@ footer{
         justify-self: center;
         margin-left: 0;
     }
-    
-}
 
-@media (width >= 1200px){
-    /* Inicio */
-    .destacados{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    /* Tienda */
-    .tienda{
-        grid-template-areas:
-        'filtro prod1 prod2 prod3'
-        'filtro prod4 prod5 prod6'
-        'filtro prod7 prod8 prod9'
-        'filtro prod10 prod11 prod12'
-        'filtro ver-mas ver-mas ver-mas';
-    }
-
-    /* Como pagar */
     .medios-de-pago{
         padding: 0 5%;
     }
+    
 }
