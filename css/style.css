@@ -322,11 +322,16 @@ footer{
             font-size: 1.4rem;
         }
 
-        .filtro ul li input{
+        .filtro ul li form{
+            display: flex;
+            align-items: center;
+        }
+
+        .filtro ul li form input{
             margin-left: 5px;
         }
 
-        .filtro ul li input:hover{
+        .filtro ul li form input:hover{
             cursor: pointer;
         }
 
