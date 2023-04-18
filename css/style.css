@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Oswald&family=Roboto:wght@300&display=swap');
+
+/* Especificaciones generales de la página */
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(../img/fondos/light-veneer.webp);
+}
+
+/* Contenedor superior */
+.contenedor-superior{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.logo{
+    width: 95%;
+}
+    .logo a img{
+        width: 100%;
+    }
+
+.barraBusqueda{
+    background-color: rgb(255, 252, 242);
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+    .barraBusqueda input{
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        background-color: transparent;
+        font-size: 1.8rem;
+        flex: 80%;
+        outline: none;
+    }
+
+.lupa{
+    width: 70px;
+    height: 38px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botones{
+    color: rgb(255, 252, 242);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .botones:active{
+        transform: scale(0.9);
+    }
+
+
+.carrito{
+   width: 60px;
+   height: 40px;
+}
+
+.ingresar{
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+
+/* Nav */
+.lista-nav{
+    list-style: none;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+        .lista-nav li a{
+            width: 100%;
+            height: 100%;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: rgb(255, 252, 242);
+            font-weight: 300;
+        }
+
+
+/* Menú desplegable */
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    
+}
+
+.barra-desplegable{
+    margin: 5px 15px 5px 15px;
+    background-color: rgb(255, 252, 242);
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+}     
+    .barra-desplegable input{
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        background-color: transparent;
+        font-size: 1.4rem;
+        flex: 1;
+        outline: none;
+        margin-left: 10px;
+    }
+    .barra-desplegable button{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 20px;
+        border: none;
+    }
+        .barra-desplegable button:active{
+            background-color: rgb(43, 77, 91);
+        }
+
+
+/* Contenedor inferior para móviles */
+.div-inferior{
+    height: 60px;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(190, 190, 175);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.redesFooter{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.textoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .textoFooter p{
+        margin: 0;
+    }
+
+/* Sección de productos */
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.producto{
+    display: flex;
+    padding: 20px;
+    background-color: rgba(145, 145, 145, 0.4);
+    width: 240px;
+    text-align: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(30, 30, 30, 0.3);
+}
+    
+    .producto figcaption{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .producto img{
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    .producto p{
+        width: 200px;
+        margin: 10px 0px;
+    }
+
+    .producto button{
+        border-radius: 5px;
+        padding: 7.5px 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+        .producto button:active{
+            background-color: rgb(55, 75, 85);
+        }
+
+.m-h1{
+    margin-top: 4rem;
+}        
+
+.padding-productos{
+    padding: 0 5%;
+}
+
+/* Nosotos */
+.texto-nosotros{
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+}
+
+.foto-local{
+    width: 90%;
+}
+
+.mapa{
+    width: 90%;
+}
+
+/* Tienda */
+.tienda{
+    margin: 0 5%;
+    display: grid;
+    grid-template-areas:
+    'prod1'
+    'prod2'
+    'prod3'
+    'prod4'
+    'prod5'
+    'prod6'
+    'prod7'
+    'prod8'
+    'prod9'
+    'prod10'
+    'prod11'
+    'prod12'
+    'ver-mas';
+}
+
+.filtro-box{
+    grid-area: filtro;
+}
+
+.filtro{
+    background-color:rgba(145, 145, 145, 0.4);
+    width: 240px;
+    height: auto;
+    padding: 20px;
+    line-height: 2.2rem;
+    color: black;
+    box-shadow: 0 0 20px 0 rgba(30, 30, 30, 0.3);
+    border-radius: 8px;
+    position: sticky;
+    top: 80px;
+    left: 0;
+}
+
+    .filtro ul{
+        list-style: none;
+    }
+
+        .filtro ul li{
+            display: flex;
+        }
+
+        .filtro ul li a{
+            text-decoration: none;
+            color: rgb(27, 48, 57);
+            font-size: 1.4rem;
+        }
+
+        .filtro ul li input{
+            margin-left: 5px;
+        }
+
+        .filtro ul li input:hover{
+            cursor: pointer;
+        }
+
+    .filtro h3{
+        margin-bottom: 10px;
+    }
+
+    .filtro h4{
+        margin: 20px 0 10px 0;
+    }
+
+.filtro-moviles{
+    background-color: rgb(190, 190, 175);
+    position: sticky;
+    top: 50px;
+    margin-bottom: 30px;
+}
+
+    .filtro-moviles h4{
+        padding-left: 20px;
+    }
+
+    .filtro-moviles ul{
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .filtro-moviles ul li label{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        padding-left: 10px;
+    }
+
+.prod1{
+    grid-area: prod1;
+}
+.prod2{
+    grid-area: prod2;
+}
+.prod3{
+    grid-area: prod3;
+}
+.prod4{
+    grid-area: prod4;
+}
+.prod5{
+    grid-area: prod5;
+}
+.prod6{
+    grid-area: prod6;
+}
+.prod7{
+    grid-area: prod7;
+}
+.prod8{
+    grid-area: prod8;
+}
+.prod9{
+    grid-area: prod9;
+}
+.prod10{
+    grid-area: prod10;
+}
+.prod11{
+    grid-area: prod11;
+}
+.prod12{
+    grid-area: prod12;
+}
+
+.ver-mas{
+    display: flex;
+    justify-content: center;
+    grid-area: ver-mas;
+}
+    .ver-mas a{
+        margin-top: 10px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: rgb(27, 48, 57);
+    }
+
+
+/* Contacto */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escribenos{
+    display: grid;
+    margin: 0 20px;
+    width: 90%;
+    grid-template-areas: 
+    'form'
+    'info';
+}
+
+.formulario{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(145, 145, 145, 0.5);
+    box-shadow: 0 0 20px 0 rgba(30, 30, 30, 0.3);
+    grid-area: form;
+}
+
+    .formulario form{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+        .formulario form label{
+            font-weight: 600;
+        }
+
+
+.boton-contacto{
+    display: flex;
+    justify-content: end;
+}
+
+    .boton-contacto button{
+        border-radius: 5px;
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        background-color: rgb(55, 75, 85);
+        cursor: pointer;
+        position: relative;
+        right: 0;
+    }
+
+.info-contacto-box{
+    grid-template-areas: info;
+}
+
+.info-contacto{
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.email-contacto{
+    line-height: 3.2rem;
+}
+
+    .email-contacto label{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+.redes-contacto{
+    margin-top: 20px;
+}
+    .redes-contacto a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    } 
+        .redes-contacto a p{
+            margin-left: 10px;
+            margin-top: 11px;
+        }
+
+.direccion{
+    margin-top: 20px;
+}
+    .direccion p{
+        line-height: 3rem;
+    }
+
+
+/* Como pagar */
+.medios-de-pago{
+    padding: 0;
+}
+
+.logos-pagos-grid{
+    display: grid;
+    padding: 20px 20px 0px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:
+    'mastercard'
+    'visa'
+    'm-pago'
+    'a-express'
+    'bch';
+}
+
+#mastercard{
+    grid-area: mastercard;
+}
+
+#visa{
+    grid-area: visa;
+}
+
+#mercado-pago{
+    grid-area: m-pago;
+}
+
+#american-express{
+    grid-area: a-express;
+}
+
+#bitcoin-cash{
+    grid-area: bch;
+}
+
+.logos-pagos-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+    .logos-pagos-box div{
+        background-color: rgba(145, 145, 145, 0.4);
+        border-radius: 10px;
+        margin-bottom: 30px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0 rgba(30, 30, 30, 0.3);
+    }
+
+.logos-pagos{
+    padding: 10px;
+    width: auto;
+    height: 140px;
+}
+
+.lista-pagos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .lista-pagos ul{
+        width: 75%;
+    }
+
+        .lista-pagos ul li{
+            font-size: 1.4rem;
+        }
+
+/* Características puntuales generales */
+.bg-primario{
+    background-color: rgb(27, 48, 57);
+}
+
+.bg-secundario{
+    background-color: rgb(235, 94, 40);
+}
+
+.color-blanco{
+    color: white;
+}
+
+.color-negro{
+    color: black;
+}
+
+.borde-negro{
+    border: black solid;
+    border-width: 1px;
+}
+
+.p-lateral{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+
+/* Media queries */
+@media (width >=480px){
+    /* Como pagar */
+    .lista-pagos ul{
+        width: auto;
+    }
+}
+
+@media (width >= 576px){
+    .logo img{
+        height: 140px;
+    }
+
+    /* Contacto */
+    .escribenos{
+        width: 536px;
+    }
+
+    /* Como pagar */
+    .logos-pagos-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        'mastercard visa'
+        'm-pago a-express'
+        'bch bch';
+    }
+    .logos-pagos-box{
+        margin-bottom: 10px;
+    }
+}
+
+@media (width >= 768px){
+    /* Inicio */
+    .destacados{
+        margin: 0 5%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .producto{
+        margin-bottom: 40px;
+    }
+
+    /* Nosotros */
+    .texto-nosotros{
+        margin-bottom: 30px;
+    }
+    .foto-local{
+        width: 665px;
+    }
+    .mapa{
+        width: 665px;
+    }
+    
+    /* Tienda */
+    .tienda{
+        grid-template-areas:
+        'prod1 prod2'
+        'prod3 prod4'
+        'prod5 prod6'
+        'prod7 prod8'
+        'prod9 prod10'
+        'prod11 prod12'
+        'ver-mas ver-mas';
+    }
+
+    /* Como pagar */
+    .logos-pagos-grid{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'mastercard mastercard visa visa m-pago m-pago'
+        'a-express a-express a-express bch bch bch';
+    }
+    #american-express{
+        justify-self: end;
+        margin-right: 10%;
+    }
+    #bitcoin-cash{
+        justify-self: start;
+        margin-left: 10%;
+    }
+
+    .lista-pagos ul li{
+        font-size: 1.8rem;
+    }
+}
+
+@media (width >= 992px){
+    .contenedor-superior{
+        height: 80px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        transition: 0.3s;
+    }
+        .logo img{
+            width: auto;
+            height: 60px;
+        }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+
+    .navegador{
+        padding: 0;
+    }
+
+    .lista-nav{
+        margin: 0;
+    }
+
+    .lista-nav li{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-nav li:hover{
+        background-color: rgba(241, 108, 55, .8);
+    }
+
+    .lista-nav li a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto button:hover{
+        background-color: rgb(55, 75, 85);
+    }
+
+    .producto button:active{
+        transform: scale(0.97);
+    } 
+    
+    .lupa:hover{
+        background-color: rgba(241, 108, 55, .8);
+    }
+    .botones:hover{
+        background-color: rgb(237, 120, 74);
+        border-color: rgb(33, 33, 33);
+    }
+
+    footer{
+        padding: 20px 5%;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .redesFooter a{
+        transition: all .2s;
+    }
+
+    .redesFooter a:hover{
+        transform: scale(1.1);
+    }
+
+    /* Inicio */
+    .destacados{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* Nosotros */
+    .quienes-somos{
+        justify-content: center;
+        width: 90%;
+    }
+
+    .texto-nosotros{
+        text-justify: initial;
+        margin-left: 5%;
+        width: 45%;
+    }
+
+    .foto-local{
+        margin-left: 5%;
+        width: 45%;
+    }
+
+    /* Tienda */
+    .tienda{
+        grid-template-areas:
+        'filtro prod1 prod2'
+        'filtro prod3 prod4'
+        'filtro prod5 prod6'
+        'filtro prod7 prod8'
+        'filtro prod9 prod10'
+        'filtro prod11 prod12'
+        'filtro ver-mas ver-mas';
+    }
+
+    /* Contacto */
+    .escribenos{
+        display: grid;
+        margin: 0 20px;
+        width: 90%;
+        grid-template-areas: 'form info';
+    }
+
+    .formulario{
+        width: 90%;
+        justify-self: end;
+    }
+
+    .info-contacto-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-contacto{
+        margin-top: 0px;
+        padding: 0;
+        text-align: start;
+    }
+
+    .redes-contacto a{
+        justify-content: start;
+    }
+
+}
+
+@media (width >= 1200px){
+    /* Nosotros */
+    .foto-local{
+        width: 500px;
+    }
+
+    /* Como pagar */
+    .logos-pagos-grid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'mastercard visa m-pago a-express bch';
+    }
+    #american-express{
+        justify-self: center;
+        margin-right: 0;
+    }
+    #bitcoin-cash{
+        justify-self: center;
+        margin-left: 0;
+    }
+    
+}
+
+@media (width >= 1200px){
+    /* Inicio */
+    .destacados{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* Tienda */
+    .tienda{
+        grid-template-areas:
+        'filtro prod1 prod2 prod3'
+        'filtro prod4 prod5 prod6'
+        'filtro prod7 prod8 prod9'
+        'filtro prod10 prod11 prod12'
+        'filtro ver-mas ver-mas ver-mas';
+    }
+
+    /* Como pagar */
+    .medios-de-pago{
+        padding: 0 5%;
+    }
+}
