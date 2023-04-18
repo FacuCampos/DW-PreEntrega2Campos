@@ -1,4 +1,4 @@
-# miskatonicTienda
+# PreEntrega2Campos
 
 Tienda de juegos - Miskatonic
 
