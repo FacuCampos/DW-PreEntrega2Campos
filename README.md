@@ -13,7 +13,7 @@ Al final de cada página hay un footer con los links a las redes sociales, a las
 Las 5 páginas son:
 - Inicio (Index): Aquí se encuentran los productos destacados y un carrousel de fotos con lo que ofrece el local.
 
-- Nosotros: La informacion del local junto a una foto. Mas abajo la dirección con un mapa.
+- Nosotros: La informacion del local junto a una foto. Mas abajo la dirección con un mapa. Todavia no tiene dirección asi que le puse una genérica.
 
 - Tienda: El catálogo completo de los productos, con un filtro y un boton de "ver mas", que por el momento no ejecutan ninguna acción.
 
